@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_color"
+    >
+
+    <Button
+        android:id="@+id/detailBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/editTextGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　目標："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/editGoal"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:inputType="text"
+        android:background="@drawable/editshape"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="　開始日："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"/>
+
+
+        <TextView
+            android:id="@+id/editStartDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/editTextFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　設定日："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="10dp"
+        android:textColor="#ffffff"/>
+
+    <DatePicker
+        android:id="@+id/editFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text=""
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtRestDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="　背景色："
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+        <Spinner
+            android:id="@+id/editSpinnerBackColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="　【MEMO】"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/editDetail"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/editshape"
+        android:ems="200"
+        android:gravity="top|left"
+        android:hint="Textを入力してください"
+        android:inputType="textMultiLine"
+        android:lines="12"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_circle"
+            android:text="設定" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
